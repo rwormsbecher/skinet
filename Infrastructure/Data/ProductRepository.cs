@@ -20,6 +20,8 @@ public class ProductRepository : IProductRepository
 
     public async Task<Product> GetProductByIdAsync(int id)
     {
+
+
         return await context.Products
             .Include(p => p.ProductBrand)
             .Include(p => p.ProductType)
