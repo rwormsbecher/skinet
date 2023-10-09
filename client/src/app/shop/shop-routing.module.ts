@@ -12,6 +12,9 @@ const routes: Routes = [
   {
     path: ':id',
     component: ProductDetailsComponent,
+    data: {
+      breadcrumb: { alias: 'productDetails' },
+    },
   },
 ];
 
