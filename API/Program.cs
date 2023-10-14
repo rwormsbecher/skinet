@@ -12,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddIDentityServices(builder.Configuration);
 
 var app = builder.Build();
 
